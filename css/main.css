@@ -1,0 +1,243 @@
+body {
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --first-color: #0d6efd;
+    /* #009ef7 */
+}
+
+.color1 {
+    color: var(--first-color);
+}
+
+#intro {
+    min-height: 70vh;
+    position: relative;
+    background-image: linear-gradient(-225deg, #E3EEFD 0%, #FFEDE6 100%);
+}
+
+#intro .content {
+    /* background-image: url("../images/bg01.jpg"); */
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#idbox {
+    background: rgba(235, 235, 235, .3);
+}
+
+#avatar {
+    max-width: 120px;
+}
+
+#skills {
+    position: relative;
+    background-color: #212529;
+}
+
+#skills .content {
+    padding: 8em 0;
+}
+
+.nav-link {
+    /* font-weight: bold !important; */
+    padding: 0.5em 1.25em !important;
+    border-radius: .475rem;
+    color: #3f4254 !important;
+    font-weight: 500;
+    display: inline-block !important
+}
+
+#navig {
+    border-bottom: 1px solid #e4e6ef;
+    background: #FFF;
+}
+
+.nav-tabs {
+    border: 0;
+}
+
+#nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 0.475rem;
+}
+
+.nav-tabs .nav-link.active {
+    border: 1px solid #e4e6ef;
+}
+
+
+#contact {
+    min-height: auto;
+}
+
+nav li a:hover {
+    transition: color .2s ease, background-color .2s ease;
+    background-color: #f9fafb;
+    color: var(--first-color) !important;
+}
+
+#navbar .active {
+    transition: color .2s ease, background-color .2s ease;
+    color: var(--first-color) !important;
+}
+
+#gallery {
+    background-color: #FFF;
+}
+
+#gallery .container-fluid {
+    padding: 5em 0 10em 0;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7em;
+    padding: 0;
+}
+
+.gallery li {
+    height: 22vh;
+    flex-grow: 10;
+    margin: 0em;
+    list-style: none;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 0.475rem;
+}
+
+.gallery img {
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: .7;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+.nav-tabs .nav-link {
+    margin: 0 .3em;
+}
+
+.nav-link.active::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--first-color);
+}
+
+.card {
+    box-shadow: 0 0 1em rgba(0, 0, 0, .1);
+}
+
+.card-img {
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 0;
+}
+
+#gallery .card-img img {
+    opacity: 1;
+    transition: ease-in-out .2s;
+}
+
+#gallery .card:hover .card-img img {
+    opacity: .7;
+    transform: scale(1.1);
+}
+
+.img-fluid {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.hover-animate:hover {
+    transform: scale(1.15);
+}
+
+.hover-animate {
+    transition: transform .3s ease;
+}
+
+.custom-shape-divider-bottom-1635172527 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1635172527 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1635172527 .shape-fill {
+    fill: #FFFFFF;
+}
+
+#conturl li {
+    list-style: none;
+}
+
+.custom-shape-divider-top-1635181422 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1635181422 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 104px;
+}
+
+.custom-shape-divider-top-1635181422 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* otro */
+
+.custom-shape-divider-bottom-1635181174 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1635181174 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 198px;
+}
+
+.custom-shape-divider-bottom-1635181174 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.bg-color1 {
+    background-color: var(--first-color);
+}
