@@ -12,13 +12,14 @@ a {
 }
 
 .color1 {
-    color: var(--first-color);
+    color: var(--bs-blue);
 }
 
 #intro {
-    min-height: 70vh;
+    min-height: 560px;
     position: relative;
     background-image: linear-gradient(-225deg, #E3EEFD 0%, #FFEDE6 100%);
+    height: 70vh;
 }
 
 #intro .content {
@@ -80,15 +81,20 @@ a {
     min-height: auto;
 }
 
+#conturl .col {
+    overflow: hidden;
+    padding: .35em;
+}
+
 nav li a:hover {
     transition: color .2s ease, background-color .2s ease;
     background-color: #f9fafb;
-    color: var(--first-color) !important;
+    color: var(--bs-blue) !important;
 }
 
 #navbar .active {
     transition: color .2s ease, background-color .2s ease;
-    color: var(--first-color) !important;
+    color: var(--bs-blue) !important;
 }
 
 #gallery {
@@ -96,7 +102,7 @@ nav li a:hover {
 }
 
 #gallery .container-fluid {
-    padding: 5em 0 10em 0;
+    padding: 5em 0;
 }
 
 .text-bold {
@@ -138,7 +144,7 @@ nav li a:hover {
 .nav-link.active::after {
     content: "";
     display: block;
-    border-bottom: 2px solid var(--first-color);
+    border-bottom: 2px solid var(--bs-blue);
 }
 
 .card-img {
@@ -147,23 +153,9 @@ nav li a:hover {
     border-radius: 0;
 }
 
-#gallery .card-img img {
-    opacity: 1;
-    transition: ease-in-out .2s;
-}
 
-#gallery.card {
-    transition: ease-in-out .2s;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0);
-}
-
-#gallery .card:hover {
-    box-shadow: 0 0 1em rgba(0, 0, 0, .1);
-}
-
-#gallery .card:hover .card-img img {
-    opacity: .7;
-    transform: scale(1.1);
+.card img {
+    transition: transform .3s ease;
 }
 
 .img-fluid {
@@ -172,8 +164,21 @@ nav li a:hover {
     object-fit: cover;
 }
 
+#gallery .card{
+    transition: all ease-in-out .2s;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .1);
+}
+
+#gallery .card:hover img {
+    transform: scale(1.1);
+}
+
+#gallery .card:hover .card-img{
+        opacity: .7;
+}
+
 .hover-animate:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .hover-animate {
@@ -207,7 +212,7 @@ nav li a:hover {
 
 .custom-shape-divider-top-1635181422 {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -229,7 +234,7 @@ nav li a:hover {
 
 .custom-shape-divider-bottom-1635181174 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -240,7 +245,7 @@ nav li a:hover {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 198px;
+    height: 70px;
 }
 
 .custom-shape-divider-bottom-1635181174 .shape-fill {
@@ -248,5 +253,105 @@ nav li a:hover {
 }
 
 .bg-color1 {
-    background-color: var(--first-color);
+    background-color: var(--bs-blue);
+}
+
+.rounded-4 {
+    border-radius: 0.475rem !important;
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    border: 2px solid var(--bs-blue);
+    width: 10px;
+    height: 10px;
+    background-color: var(--bs-blue);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+
+.carousel__slide {
+    width: 33.333333%;
+    margin: 0 0.625rem;
+    border-radius: 0.475rem;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.carousel__button.is-prev, .carousel__button.is-next {
+    position: unset;
+    transform: unset;
+    margin: 0 12px;
+    width: 26px;
+    height: 26px;
+    --carousel-button-svg-width: 17px;
+    --carousel-button-svg-height: 17px;
+    --carousel-button-svg-stroke-width: 2.6;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--bs-blue);
+    outline: none;
+    transition: opacity 0.15s;
+    color: white;
+}
+
+.carousel__button.is-prev:not([disabled]):hover, .carousel__button.is-next:not([disabled]):hover {
+    background: #1d1d1f;
+    color: #fff;
+}
+
+#newsCarousel a {
+    transition: 0.25s;
+    color: inherit;
+}
+
+#newsCarousel .is-dragging a {
+    cursor: grabbing;
+}
+
+#newsCarousel a picture {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+#newsCarousel a picture::after {
+    opacity: 0;
+    transition: 0.25s;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+}
+
+#newsCarousel a picture img {
+    transition: 0.25s;
+    height: 250px;
+    width: 100%;
+}
+
+#newsCarousel a:hover {
+    box-shadow: 10px 10px 20px 0px rgb(0 0 0 / 4%), -10px 0 20px 0px rgb(0 0 0 / 4%);
+}
+
+#newsCarousel a:hover picture img {
+    transform: scale(1.05);
+}
+
+#newsCarousel a:hover picture::after {
+    opacity: 0.15;
+}
+
+.carousel__viewport picture{
+    overflow: hidden;
 }
