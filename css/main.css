@@ -18,8 +18,8 @@ a {
 #intro {
     min-height: 560px;
     position: relative;
-    background-image: linear-gradient(-225deg, #E3EEFD 0%, #FFEDE6 100%);
-    height: 70vh;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(201, 214, 255), rgb(226, 226, 226)) repeat scroll 0% 0%;
+    height: 100vh;
 }
 
 #intro .content {
@@ -32,13 +32,19 @@ a {
     background: rgba(235, 235, 235, .3);
 }
 
-#avatar {
-    max-width: 120px;
+.quick-contact {
+    padding: 0;
+}
+
+.quick-contact li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.1em;
 }
 
 #skills {
     position: relative;
-    background-color: #212529;
+    background-color: #0c1336;
     background-image: url("../images/texture-02.png");
 }
 
@@ -59,9 +65,13 @@ a {
     display: inline-block !important
 }
 
+#foot {
+    border-top: 1px solid #e4e6ef;
+}
+
 #navig {
-    border-bottom: 1px solid #e4e6ef;
     background: #FFF;
+    border-bottom: 1px solid #e4e6ef;
 }
 
 .nav-tabs {
@@ -101,8 +111,9 @@ nav li a:hover {
     background-color: #FFF;
 }
 
-#gallery .container-fluid {
-    padding: 5em 0;
+#gallery .container-fluid
+{
+    padding: 5em 0 0 0;
 }
 
 .text-bold {
@@ -171,9 +182,6 @@ nav li a:hover {
 
 #gallery .card:hover img {
     transform: scale(1.1);
-}
-
-#gallery .card:hover .card-img {
     opacity: .7;
 }
 
@@ -181,9 +189,9 @@ nav li a:hover {
     transform: scale(1.1);
 }
 
-.hover-animate {
+/* .hover-animate {
     transition: transform .3s ease;
-}
+} */
 
 .custom-shape-divider-bottom-1635172527 {
     position: absolute;
@@ -206,7 +214,7 @@ nav li a:hover {
     fill: #FFFFFF;
 }
 
-#conturl li {
+#conturl li, .list-algorithms {
     list-style: none;
 }
 
@@ -256,6 +264,21 @@ nav li a:hover {
     fill: #FFFFFF;
 }
 
+
+#list-articles .card-img {
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+}
+
+#list-articles .card-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
 .bg-color1 {
     background-color: var(--bs-blue);
 }
@@ -286,14 +309,18 @@ h1::before {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
+    padding: 1em 0;
+}
+
+#newsCarousel .carousel__button.is-prev, #newsCarousel .carousel__button.is-next {
+    position: unset;
 }
 
 .carousel__button.is-prev, .carousel__button.is-next {
-    position: unset;
     transform: unset;
     margin: 0 12px;
-    width: 26px;
-    height: 26px;
+    width: 40px;
+    height: 40px;
     --carousel-button-svg-width: 17px;
     --carousel-button-svg-height: 17px;
     --carousel-button-svg-stroke-width: 2.6;

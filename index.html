@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>Ricardo Chu Portafolio</title>
+    <title>Ricardo Chu</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,10 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS v5.0.2 -->
+    <!-- Bootstrap CSS v5.1.3 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <!-- Font Awesome v6.1.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
+    <!-- FancyBox v4.0 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Bootstrap JavaScript Libraries -->
@@ -47,11 +50,19 @@
                         <a class="nav-link" href="#gallery">Proyectos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#articles">Artículos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contacto</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a id="dwn-cv" class="nav-link" href="#" target=""><i
+                            class="fas fa-cloud-download-alt"></i> &nbsp; Ver CV</a>
+                    </li> -->
+
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,19 +89,29 @@
     <section id="intro" class="anchor d-flex">
 
         <div class="container mh-100 align-self-center">
-            <div class="content text-center">
+            <div id="my-profile" class="content text-center">
 
                 <div class="align-self-center p-2">
                     <img id="avatar" class="rounded-circle" src="images/me.png"></img>
                 </div>
 
-                <p class="fs-1"><b><span style="color: var(--bs-blue);">Ricardo Chu</span></b></p>
-                <p class="fs-5">Ingeniero Eléctrico</p>
-                <p>Quevedo, Ecuador</p>
-
-                <!-- <div class="s"><a id="dwn-cv" href="files/Ricardo Chu CV.pdf" target="_blank"><i
-                            class="fas fa-cloud-download-alt"></i> &nbsp; Descargar CV</a>
-                </div> -->
+                <p>
+                    <span class="fs-1" style="color: var(--bs-blue);"><strong>Ricardo Chu</strong></span><br/>
+                    <span class="fs-5">Ingeniero eléctrico, científico de datos y desarrollador web</span><br/>
+                    <span class="fs-6">Quevedo, Ecuador</span>
+                </p>
+                
+                <ul class="quick-contact fs-3">
+                    <span><strong><</strong></span>
+                    <li class="hover-animate"><a title="email" href="mailto:rczgraphics@live.com"><i class="fas fa-envelope"></i></a></li>
+                    <li class="hover-animate"><a title="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ricardo-chu-zheng/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="hover-animate"><a title="telegram" target="_blank" rel="noopener noreferrer" href="https://telegram.me/ricardo_chu"><i class="fa-brands fa-telegram"></i></a></li>
+                    <li class="hover-animate"><a title="github" target="_blank" rel="noopener noreferrer" href="https://github.com/kypexfly"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="hover-animate"><a title="orcid" target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0002-9014-7000"><i class="fa-brands fa-orcid"></i></a></li>
+                    <span><strong>></strong></span>
+                </ul>
+<br/>
+                <!-- <pre>✨ Interesado en Machine Learning, Data Science y Electrónica de Potencia ✨</pre> -->
 
             </div>
         </div>
@@ -113,15 +134,16 @@
             <div class="container pt-4">
 
                 <h1>Proyectos</h1>
-            </br>
-                <nav id="works" class="text-center pb-5">
+                <hr>
+                </br>
+                <nav id="works" class="text-center pb-3">
                     <div class="nav nav-tabs row" id=nav-tab role=tablist>
                         <button class="nav-link col-auto" id=nav-home-tab data-bs-toggle=tab data-bs-target=#nav-designs
                             type=button role=tab aria-controls=nav-home aria-selected=true>Gráficos</button>
 
                         <button class="nav-link col-auto active " id=nav-profile-tab data-bs-toggle=tab
                             data-bs-target=#nav-profile type=button role=tab aria-controls=nav-profile
-                            aria-selected=false>Web</button>
+                            aria-selected=false>Programación</button>
 
                         <button class="nav-link col-auto" id=nav-profile-tab data-bs-toggle=tab
                             data-bs-target=#nav-electronics type=button role=tab aria-controls=nav-profile
@@ -133,6 +155,12 @@
                 <div class=tab-content id=nav-tabContent>
                     <div class="tab-pane fade" id=nav-designs role=tabpanel aria-labelledby=nav-home-tab>
                         <div class=content>
+                        
+                            <div class="pb-5" style="text-align: right;">
+                                <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://kypexfly.deviantart.com/">
+                                    <i class="px-2 fas fa-external-link-alt"></i>Ir a DeviantART</a></div>
+                            </div>
+
                             <ul class="gallery">
                                 <li><a data-fancybox="gallery" href="images/designs/dsgn (1).png">
                                         <img class="rounded hover-animate" loading="lazy"
@@ -195,17 +223,21 @@
                                             src="images/designs/dsgn (21).png" />
                                     </a></li>
                             </ul>
-
-                            <div class="pt-5" style="text-align: right;"><a class="btn btn-primary" target="_blank"
-                                    href="https://kypexfly.deviantart.com/"><i
-                                        class="px-2 fas fa-external-link-alt"></i>Ir a DeviantART</a></div>
-                        </div>
                     </div>
 
                     <div class="tab-pane fade show active" id=nav-profile role=tabpanel aria-labelledby=nav-profile-tab>
                         <div class=content>
+
+                            <div class="pb-5" style="text-align: right;"><a class="btn btn-primary"
+                                href="https://github.com/kypexfly/" target="_blank" rel="noopener noreferrer"><i
+                                    class="px-2 fas fa-external-link-alt"></i>Ver
+                                Github</a></div>
+                    </div>
+                    
+                    <h4><span class="badge bg-primary">Desarrollo web</span></h4>
+
                             <div class="row row-cols-1 row-cols-md-2 p-2 gy-5 justify-content-center">
-                                <a class="card-box" href="https://california-demo.netlify.app/" target="_blank">
+                                <a class="card-box" href="https://california-demo.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <div class="card h-100 text-black">
                                         <div class="row g-0">
                                             <div class="card-img col-md">
@@ -227,7 +259,7 @@
                                     </div>
                                 </a>
 
-                                <a class="card-box" href="#" target="_blank">
+                                <a class="card-box" href="#" target="_blank" rel="noopener noreferrer">
                                     <div class="card h-100 text-black">
                                         <div class="row g-0">
                                             <div class="card-img col-md">
@@ -249,7 +281,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a class="card-box" href="https://logiasantosmojadosv2.netlify.app/" target="_blank">
+                                <a class="card-box" href="https://logiasantosmojadosv2.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <div class="card h-100 text-black">
                                         <div class="row g-0">
                                             <div class="card-img col-md">
@@ -258,7 +290,7 @@
 
                                             <div class="col-md-7">
                                                 <div class="card-body">
-                                                    <h5 class="card-title color1">Logia de los Santos</h5>
+                                                    <h5 class="card-title color1">Logia de los Santos Mojados</h5>
                                                     <p class="card-text">Rediseño del sitio web LSM utilizando React.js
                                                         y React-Router-Dom.</p>
                                                     <p class="card-text"><small class="text-muted">Tecnologías: HTML,
@@ -268,7 +300,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a class="card-box" href="https://spaingfx.foroes.org/" target="_blank">
+                                <a class="card-box" href="https://spaingfx.foroes.org/" target="_blank" rel="noopener noreferrer">
                                     <div class="card h-100 text-black">
                                         <div class="row g-0">
                                             <div class="card-img col-md">
@@ -289,16 +321,20 @@
                                     </div>
                                 </a>
                             </div>
-
-                            <div class="pt-5" style="text-align: right;"><a class="btn btn-primary"
-                                    href="https://github.com/kypexfly/" target="_blank"><i
-                                        class="px-2 fas fa-external-link-alt"></i>Ver
-                                    Github</a></div>
-                        </div>
+                    
+                    <div class="pb-5"></div>
+                    <h4><span class="badge bg-primary">Algoritmos</span></h4>
+                    <br/>
+                            <ul class="list-algorithms">
+                                <li><i class="fa-solid fa-up-right-from-square"></i> <a href="https://github.com/kypexfly/economic-load-dispatch" target="_blank" rel="noopener noreferrer">Despacho económico de unidades térmicas</a></li>
+                                <li><i class="fa-solid fa-up-right-from-square"></i> <a href="https://github.com/kypexfly/unit-commitment" target="_blank" rel="noopener noreferrer">Selección de unidades térmicas</a></li>
+                                <li><i class="fa-solid fa-up-right-from-square"></i> <a href="https://github.com/kypexfly/particle-swarm-optimization" target="_blank" rel="noopener noreferrer">Algoritmo de optimización enjambre de partículas (PSO)</a> (en progreso)</li>
+                                <li><i class="fa-solid fa-up-right-from-square"></i> <a href="https://github.com/kypexfly/optimal-capacitor-placement" target="_blank" rel="noopener noreferrer">Ubicación óptima de capacitores con algoritmo PSO</a> (en progreso)</li>
+                            </ul>
 
                     </div>
 
-                    <div class="tab-pane fade" id=nav-electronics role=tabpanel aria-labelledby=nav-profile-tab>
+                    <div class="tab-pane fade pt-5" id=nav-electronics role=tabpanel aria-labelledby=nav-profile-tab>
                         <div class=content>
                             <div class="row">
                                 <div class="col-4">
@@ -396,6 +432,56 @@
         </div>
     </section>
 
+    <section id="articles" class="anchor">
+        <div class="container-fluid pt-5 py-1">
+            <div class="container pt-4">
+                <h1>Artículos</h1>
+                <hr>
+                <div id="list-articles" class="py-5">
+
+                <div class="card w-100 mb-3">
+                    <div class="card-body">
+
+                        <a class="card-title" href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="card-body">
+                                <div class="card-img col-md">
+                                    <img src="images/article-card-02.jpg" class="img-fluid" alt="...">
+                                </div>
+                            <h4>Análisis de los Efectos Causados por Armónicos Inyectados Debido a la Carga de Vehículos Eléctricos en el Sistema de Pruebas IEEE 34 Barras</h4>
+                        </a>
+                    
+                      <p class="card-text">El estudio del comportamiento de los armónicos en la red es de suma importancia ya que de esa manera se podrá gestionar de mejor 
+                          forma la inyección de armónicos, y ante la vista de un muy posible crecimiento porcentual de los vehículos eléctricos en el país se debe tomar en 
+                          cuenta las consecuencias</p>
+
+                      <p class="text-black-50">Ricardo Chu, Leonardo Goyes, Ramón Mendoza, Omar Parrales, Diego Peña</p>
+
+                    </div>
+                  </div>
+                  </div>
+                
+
+                <div class="card w-100 mb-3">
+                    <a class="card-title" href="https://centrosuragraria.com/index.php/revista/article/view/131" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <div class="card-img col-md">
+                                <img src="images/article-card-01.jpg" class="img-fluid" alt="...">
+                            </div>
+                        <h4>Dimensionamiento de un Sistema Fotovoltaico en la Ciudad de Quevedo para Uso Residencial</h4>
+                    </a>
+
+                      <p class="card-text">Se presenta el dimensionamiento de un pequeño sistema fotovoltaico de una residencia en la ciudad de Quevedo, con el objetivo de analizar 
+                          las instalaciones solares fotovoltaicas como una medida para fomentar el uso de la generación distribuida en los hogares</p>
+
+                      <p class="text-black-50">Ricardo Chu, Jorge Merino, Yadyra Ortiz, Diego Peña</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="skills" class="anchor">
         <div class="dividers custom-shape-divider-top-1635181422">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -408,12 +494,12 @@
 
         <div class="container">
             <div class="content">
-                    <h1 class="text-white">Habilidades</h1>
-            </br>
-                    <p class="text-white-50 fs-3">
-                        Dominio en software de diferentes ámbitos que abarcan la programación, ingeniería
-                        eléctrica, diseño y desarrollo web.
-                    </p>
+                <h1 class="text-white">Habilidades</h1>
+                </br>
+                <p class="text-white-50 fs-5">
+                    Dominio en software de diferentes ámbitos que abarcan la programación, ingeniería
+                    eléctrica, diseño gráfico y desarrollo web.
+                </p>
 
                 <!-- <div class="row rows-cols-3 row-cols-md-3 justify-content-center gy-4 pt-5">
                     <div class="col">
@@ -496,7 +582,7 @@
                 </div> -->
 
 
-                <div id="newsCarousel" class="carousel mb-5 py-4">
+                <div id="newsCarousel" class="carousel mb-5 pt-4">
                     <div class="carousel__viewport pb-3">
                         <a href="javascript:;" class="carousel__slide px-0 py-0 bg-light">
                             <figure>
@@ -513,6 +599,7 @@
                                         <li>DIgSILENT PowerFactory</li>
                                         <li>CYME</li>
                                         <li>CADe Simu</li>
+                                        <li>DIALux</li>
                                     </ul>
                                     </p>
                                 </figcaption>
@@ -596,7 +683,7 @@
                                         <li>Javascript</li>
                                         <li>React</li>
                                         <li>Git, Github</li>
-                                        <li>NPM</li>
+                                        <li>npm</li>
                                     </ul>
                                     </p>
                                 </figcaption>
@@ -631,13 +718,14 @@
                     </div> -->
 
                     <div class="col flex-grow-1">
-                        <h1 class="fs-2 text-bold">¿Te gusta lo que ves?</h1>
+                        <h1 class="text-bold">Contacto</h1>
+                        <hr>
                         <p class="py-3">Podemos conversar a través de:</p>
 
                         <div id="conturl"
                             class="row row-cols-1 row-cols-md-3 justify-content-center py-2 my-2 text-center">
                             <div class="col">
-                                <a href="https://telegram.me/ricardo_chu" target="_blank">
+                                <a href="https://telegram.me/ricardo_chu" target="_blank" rel="noopener noreferrer">
                                     <li class="hover-animate"><i class="fab fa-telegram display-3"></i>
                                         <p>Telegram</p>
                                         <small class="text-black">@ricardo_chu</small>
@@ -653,7 +741,7 @@
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="https://github.com/kypexfly" target="_blank">
+                                <a href="https://github.com/kypexfly" target="_blank" rel="noopener noreferrer">
                                     <li class="hover-animate"><i class="fab fa-github display-3"></i>
                                         <p>Github</p>
                                         <small class="text-black">@kypexfly</small>
