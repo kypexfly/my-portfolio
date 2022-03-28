@@ -164,7 +164,7 @@ nav li a:hover {
     object-fit: cover;
 }
 
-#gallery .card{
+#gallery .card {
     transition: .2s;
     box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
@@ -173,8 +173,8 @@ nav li a:hover {
     transform: scale(1.1);
 }
 
-#gallery .card:hover .card-img{
-        opacity: .7;
+#gallery .card:hover .card-img {
+    opacity: .7;
 }
 
 .hover-animate:hover {
@@ -208,6 +208,10 @@ nav li a:hover {
 
 #conturl li {
     list-style: none;
+}
+
+.dividers {
+    display: none;
 }
 
 .custom-shape-divider-top-1635181422 {
@@ -261,7 +265,7 @@ nav li a:hover {
 }
 
 h1::before {
-    content: "";
+    /* content: ""; */
     display: inline-block;
     border: 2px solid var(--bs-blue);
     width: 10px;
@@ -352,6 +356,6 @@ h1::before {
     opacity: 0.15;
 }
 
-.carousel__viewport picture{
+.carousel__viewport picture {
     overflow: hidden;
 }
